@@ -8,6 +8,7 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import eu.kanade.domain.ui.model.ThemeMode
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.i18n.stringResource
@@ -28,18 +29,19 @@ internal fun AppThemeModePreferenceWidget(
             MultiChoiceSegmentedButtonRow(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = PrefsHorizontalPadding),
+                    .padding(horizontal = PrefsHorizontalPadding-6.dp),
             ) {
                 options.onEachIndexed { index, (mode, labelRes) ->
                     SegmentedButton(
                         checked = mode == value,
+
                         onCheckedChange = { onItemClick(mode) },
                         shape = SegmentedButtonDefaults.itemShape(
                             index,
                             options.size,
                         ),
                     ) {
-                        Text(stringResource(labelRes))
+                        Text(stringResource(labelRes), maxLines = 1 )
                     }
                 }
             }

@@ -30,7 +30,7 @@ internal class DownloadNotifier(private val context: Context) {
 
     private val progressNotificationBuilder by lazy {
         context.notificationBuilder(Notifications.CHANNEL_DOWNLOADER_PROGRESS) {
-            setLargeIcon(BitmapFactory.decodeResource(context.resources, R.mipmap.ic_launcher))
+            setLargeIcon(BitmapFactory.decodeResource(context.resources, R.drawable.gihon_icon))
             setAutoCancel(false)
             setOnlyAlertOnce(true)
         }

@@ -3,6 +3,7 @@ package eu.kanade.tachiyomi.data.download
 import android.content.Context
 import android.content.pm.ServiceInfo
 import android.os.Build
+import android.util.Log
 import androidx.lifecycle.asFlow
 import androidx.work.CoroutineWorker
 import androidx.work.ExistingWorkPolicy

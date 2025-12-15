@@ -24,7 +24,7 @@ android {
     namespace = "eu.kanade.tachiyomi"
 
     defaultConfig {
-        applicationId = "app.mihon"
+        applicationId = "app.gihon"
 
         versionCode = 16
         versionName = "0.19.3"
@@ -78,7 +78,7 @@ android {
             initWith(release)
 
             isDebuggable = false
-            isProfileable = true
+            isProfileable = false
             versionNameSuffix = "-benchmark"
             applicationIdSuffix = ".benchmark"
 
