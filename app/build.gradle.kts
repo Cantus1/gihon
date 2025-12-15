@@ -26,8 +26,8 @@ android {
     defaultConfig {
         applicationId = "app.gihon"
 
-        versionCode = 16
-        versionName = "0.19.3"
+        versionCode = 1
+        versionName = "0.9.0"
 
         buildConfigField("String", "COMMIT_COUNT", "\"${getCommitCount()}\"")
         buildConfigField("String", "COMMIT_SHA", "\"${getGitSha()}\"")
