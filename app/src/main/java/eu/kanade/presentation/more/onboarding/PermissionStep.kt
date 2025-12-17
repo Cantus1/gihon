@@ -70,8 +70,14 @@ internal class PermissionStep : OnboardingStep {
                     } else {
                         true
                     }
-                    batteryGranted = context.getSystemService<PowerManager>()!!
-                        .isIgnoringBatteryOptimizations(context.packageName)
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        batteryGranted = context.getSystemService<PowerManager>()!!
+                            .isIgnoringBatteryOptimizations(context.packageName)
+                    }
+                    else
+                    {
+                        batteryGranted=true;
+                    }
                 }
             }
             lifecycleOwner.lifecycle.addObserver(observer)

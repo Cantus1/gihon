@@ -1,7 +1,7 @@
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut
         android:enabled="true"
-        android:icon="@drawable/sc_collections_bookmark_48dp"
+        android:icon="@drawable/ic_system_update_alt_white_24dp"
         android:shortcutDisabledMessage="@string/app_not_available"
         android:shortcutId="show_library"
         android:shortcutLongLabel="@string/label_library"
@@ -12,7 +12,7 @@
     </shortcut>
     <shortcut
         android:enabled="true"
-        android:icon="@drawable/sc_new_releases_48dp"
+        android:icon="@drawable/ic_system_update_alt_white_24dp"
         android:shortcutDisabledMessage="@string/app_not_available"
         android:shortcutId="show_recently_updated"
         android:shortcutLongLabel="@string/label_recent_updates"
@@ -23,7 +23,7 @@
     </shortcut>
     <shortcut
         android:enabled="true"
-        android:icon="@drawable/sc_history_48dp"
+        android:icon="@drawable/ic_system_update_alt_white_24dp"
         android:shortcutDisabledMessage="@string/app_not_available"
         android:shortcutId="show_recently_read"
         android:shortcutLongLabel="@string/label_recent_manga"
@@ -34,7 +34,7 @@
     </shortcut>
     <shortcut
         android:enabled="true"
-        android:icon="@drawable/sc_explore_48dp"
+        android:icon="@drawable/ic_system_update_alt_white_24dp"
         android:shortcutDisabledMessage="@string/app_not_available"
         android:shortcutId="show_catalogues"
         android:shortcutLongLabel="@string/browse"
